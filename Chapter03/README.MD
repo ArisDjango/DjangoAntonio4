@@ -1,0 +1,25 @@
+## BLOG
+- Install
+    - git clone xxxx-entire-chapter
+    - cd chapter 03
+    - python -m venv venv
+    - source ./venv/bin/activate
+    - pip install -r requirements.txt
+- Set Database
+    - sudo service postgresql start
+    - Access database:
+        - sudo su
+        - su - postgresql
+        - psql --> \l, \du, \dt
+    - Add database
+        - Check database > settings.py, use this variable to set database.
+        - CREATE USER aris WITH ENCRYPTED PASSWORD 'aris1985';
+        - CREATE DATABASE blog4 OWNER aris;
+        - DROP DATABASE name; --> delete 
+- Run
+    - cd chapter03/mysite
+    - python manage.py makemigrations
+    - python manage.py migrate
+    - python manage.py runserver
+    - localhost:8000/admin --> admin panel
+    - localhost:8000/blog --> blog frontpage
