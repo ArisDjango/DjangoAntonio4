@@ -24,3 +24,7 @@
     - python manage.py runserver
     - localhost:8000/admin --> admin panel
     - localhost:8000/blog --> blog frontpage
+- Screenshoot
+- ![image](https://user-images.githubusercontent.com/24581953/204668338-6f784263-b526-4085-8561-2b6651e8093e.png)
+- ![image](https://user-images.githubusercontent.com/24581953/204668388-6b171325-8ee9-477e-8330-aee6f66eda1d.png)
+- ![image](https://user-images.githubusercontent.com/24581953/204668457-291b90d4-ba8b-4174-9485-02053c3e12c2.png)
