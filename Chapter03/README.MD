@@ -20,6 +20,7 @@
     - cd chapter03/mysite
     - python manage.py makemigrations
     - python manage.py migrate
+    - python manage.py createsuperuser
     - python manage.py runserver
     - localhost:8000/admin --> admin panel
     - localhost:8000/blog --> blog frontpage
