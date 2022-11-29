@@ -1,0 +1,27 @@
+## BLOG
+- Install
+    - git clone xxxx-entire-chapter
+    - cd chapter 07
+    - python -m venv venv
+    - source ./venv/bin/activate
+    - pip install -r requirements.txt
+- Set Database
+    - sudo service postgresql start
+    - Access database:
+        - sudo su
+        - su - postgresql
+        - psql --> \l, \du, \dt
+    - Add database
+        - Check database > settings.py, use this variable to set database.
+        - CREATE USER aris WITH ENCRYPTED PASSWORD 'aris1985';
+        - CREATE DATABASE blog4 OWNER aris;
+        - DROP DATABASE name; --> delete 
+- Run
+    - cd chapter03/bookmarks
+    - python manage.py makemigrations
+    - python manage.py migrate
+    - python manage.py createsuperuser
+    - python manage.py runserver
+- Problem
+    - bookmarklet screenshoot function not works
+- Screenshoot
