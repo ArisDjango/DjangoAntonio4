@@ -1,0 +1,49 @@
+## Installation
+- Install
+    - git clone xxxx-entire-chapter
+    - cd chapter 07
+    - python -m venv venv
+    - source ./venv/bin/activate
+    - pip install -r requirements.txt
+- Set Database
+    - sudo service postgresql start
+    - Access database:
+        - sudo su
+        - su - postgresql
+        - psql --> \l, \du, \dt
+    - Add database
+        - Check database > settings.py, use this variable to set database.
+        - CREATE USER aris WITH ENCRYPTED PASSWORD 'aris1985';
+        - CREATE DATABASE blog4 OWNER aris;
+        - DROP DATABASE name; --> delete 
+- Run
+    - cd chapter03/myshop
+    - python manage.py makemigrations
+    - python manage.py migrate
+    - python manage.py createsuperuser
+    - python manage.py runserver
+- Problem
+    - Tampilan kacau balau
+- Screenshoot
+## Fiture
+- **Ecommerce Application** (chapters 8-11): Create a fully-featured on-line shop
+  - Build the models of the product catalog
+  - Create a shopping cart using Django sessions
+  - Create custom context processors
+  - Manage customer orders
+  - Send asynchronous notifications using [Celery](https://docs.celeryq.dev/) and [RabbitMQ](https://www.rabbitmq.com/)
+  - Monitory Celery using [Flower](https://github.com/mher/flower)
+  - Integrate [Stripe](https://stripe.com/) to process payments
+  - Implement a webhook to receive payment notifications from Stripe
+  - Build custom views in the Django administration site
+  - Create admin actions and generate CSV files
+  - Generate PDF invoices dynamically using [Weasyprint](https://weasyprint.org/)
+  - Create a coupon system to apply disconts to orders
+  - Integrate discounts with Stripe payments
+  - Build a product recommendation engine using Redis
+  - Add internationalization to the shop
+  - Generate and manage translation files
+  - Use [Rosetta](https://github.com/mbi/django-rosetta) to manage translations
+  - Translate URL patterns and build a language selector
+  - Translate models using [django-parler](https://github.com/django-parler/django-parler)
+  - Localize forms using [django-localflavor](https://github.com/django/django-localflavor)
